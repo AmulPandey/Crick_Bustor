@@ -64,11 +64,11 @@ kotlin {
 }
 
 android {
-    namespace = "org.assignment_life_easy.project"
+    namespace = "org.Crick_Bustor"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "org.assignment_life_easy.project"
+        applicationId = "org.Crick_Bustor"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
