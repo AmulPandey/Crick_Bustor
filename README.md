@@ -1,14 +1,67 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# **Crick_Bustor**
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+**Crick_Bustor** is a **Kotlin Multiplatform (KMP)** cricket dashboard application that fetches **match details, location, and weather**. This app supports both **Android and iOS**, leveraging **Compose Multiplatform (CMP)** for UI and **Ktor** for network requests.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## 📌 Features
 
+- 🏏 **Live Match Updates** – Fetch real-time match details.
+- 📍 **Match Location** – Retrieve match venue details.
+- 🌦 **Weather Information** – Display live weather updates for match locations.
+- 🔄 **Cross-Platform Support** – Runs seamlessly on **Android and iOS** using **KMP**.
+- 🚀 **Modern UI with Compose Multiplatform**.
+- 🔌 **API Integration via Ktor**.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## ScreenShot
+![screenshot](https://github.com/AmulPandey/Swipe/blob/main/WhatsApp%20Image%202025-01-31%20at%204.39.22%20AM.jpeg)
+![screenshot](https://github.com/AmulPandey/Swipe/blob/main/WhatsApp%20Image%202025-01-31%20at%204.39.22%20AM.jpeg)
+
+## 🏗️ Project Structure
+
+```
+Crick_Bustor/
+│── composeApp/   # Shared Compose Multiplatform Code
+│   ├── commonMain/  # Common logic across platforms
+│   ├── androidMain/ # Android-specific implementations
+│   ├── iosMain/     # iOS-specific implementations
+│── iosApp/        # iOS-specific entry point (SwiftUI code)
+│── androidApp/    # Android-specific entry point
+```
+
+## 🛠️ Tech Stack
+
+- **Language**: Kotlin (Multiplatform)
+- **UI Framework**: Compose Multiplatform
+- **Networking**: Ktor Client
+- **Dependency Injection**: Koin (optional)
+- **State Management**: ViewModel, Flow
+
+## 🔧 Setup & Installation
+
+### Prerequisites
+- Install **Android Studio** with Kotlin Multiplatform plugin.
+- Install **Xcode** (for iOS development).
+
+### Running on Android
+```sh
+./gradlew androidApp:installDebug
+```
+
+### Running on iOS
+```sh
+cd iosApp
+pod install  # Ensure CocoaPods is installed
+open iosApp.xcworkspace  # Open in Xcode and run
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to **open issues or submit PRs**.
+
+## 📩 Contact
+
+For any queries, reach out to **[amulpandey007@gmail.com](mailto:amulpandey007@gmail.com)**.
+
+---
+
+Learn more about **[Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)**.
+
