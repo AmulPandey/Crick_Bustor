@@ -12,8 +12,7 @@
 - 🔌 **API Integration via Ktor**.
 
 ## ScreenShot
-![screenshot](https://github.com/AmulPandey/Swipe/blob/main/WhatsApp%20Image%202025-01-31%20at%204.39.22%20AM.jpeg)
-![screenshot](https://github.com/AmulPandey/Swipe/blob/main/WhatsApp%20Image%202025-01-31%20at%204.39.22%20AM.jpeg)
+![screenshot](https://github.com/AmulPandey/Crick_Bustor/blob/temp/screenshot.jpeg)
 
 ## 🏗️ Project Structure
 
